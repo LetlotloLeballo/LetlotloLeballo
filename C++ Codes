@@ -1,0 +1,54 @@
+//Class And Object Creation
+#include <iostream>
+using namespace std;
+
+class Student{
+private:
+    string name;
+    int roll_num;
+    string grade;
+public:
+    //constructer
+    Student Records(string Name, int Roll_num, string Grade){
+    name = Name;
+    roll_num = Roll_num;
+    grade = Grade;
+    }
+    //method 1
+    int display(){
+    cout << "Please enter your name:";
+    cin >> name;
+    cout << endl;
+    cout << "Please enter your enrollment number:";
+    cin >> roll_num;
+    cout << endl;
+    cout << "Please enter your grade:";
+    cin >> grade;
+    cout << endl;
+    cout << "Student information:" << endl;
+    cout << "Name:" << name << endl;
+    cout << "enrollment number:" << roll_num << endl;
+    cout << "Grade:" << grade << endl;
+    }
+    //method 2
+    int update(){
+     string update;
+     cout << "Want to update?: Yes/No" << endl;
+     cin >> update;
+     while(update == "no"){
+        break;
+     }if(update == "yes"){
+        return display();
+     }
+    }
+};
+
+
+int main()
+{
+    //creating an object using a 'Student' class
+    Student S;
+    S.display();
+    S.update();
+    return 0;
+}
