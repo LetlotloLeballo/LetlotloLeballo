@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="A.css">
+    </head>
+    <body>
+      <form id="survey-form">
+      <h1 id="title">Survey Form</h1><br>
+      <p id="description">Your time taken to fill out this survey is highly appreciated!! <br>from the RocoMamas family</p><br><br>
+      <label for="name-label">Name:</label><br>
+      <input type="text" name="name" class="input" placeholder="Enter your name" required/><br><br>
+      <label for="email-label">Email:</label><br>
+        <input type="email" name="email" class="input" placeholder="Enter your email" required/><br><br>
+        <label for="age-label">Age:</label><br><br>
+        <input type="number" class="age" name="age" placeholder="Age" min="18" max="75" required/>
+        <br><br>
+        <label for="occupation">Choose your current occupation:</label><br>
+        <select id="dropdown"><option type="">Choose an option</option><option type="Software Architect">Software Architect</option><option type="Software Developer">Software Developer</option><option type="Cloud Engineer">Cloud Engineer</option><option type="Cyber Security">Cyber Security</option>
+        </select><br><br><br>
+
+          <label for="socials">How did you hear about us?</label><br><br>
+          <label for="facebook"><input type="radio" class="option" name="facebook"/>facebook</label><br><br>
+          <label for="twitter"><input type="radio" class="option" name="twitter"/>Twitter</label><br><br>
+          <label for="tiktok"><input type="radio" class="option" name="tiktok"/>Tiktok</label><br><br>
+          <label for="internet"><input type="radio" class="option" name="internet"/>Internet</label><br><br><br>
+            
+
+        <label for="improvements">On which food options below would you like us to improve in?</label><br><br>
+          <label for="starters"><input type="checkbox" class="option" name="starters"/>Starters</label><br><br>
+          <label for="main course"><input type="checkbox" class="option" name="main course"/>Main Course</label><br><br>
+          <label for="desserts"> <input type="checkbox" class="option" name="desserts"/>Desserts</label><br><br><br>
+          
+        <label for="feedback">Please give us your feedback:</label><br>
+          <textarea rows="10" cols="50" placeholder="Message..."></textarea><br><br>
+          <input type="submit" name="submit" class="submit" value="Submit">
+        </form>
+      </body>
+      </html>
